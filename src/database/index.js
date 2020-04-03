@@ -1,9 +1,9 @@
 const Sequelize = require('sequelize');
-const dbConfig = require('../config/database');
+const dbconfig = require('../config/database');
 
 const File = require('../models/File');
 
-const sequelize = new Sequelize(dbConfig);
+const sequelize = new Sequelize(dbconfig);
 
 File.init(sequelize);
 
